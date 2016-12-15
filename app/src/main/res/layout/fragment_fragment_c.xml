@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/holo_red_dark"
+    tools:context="com.shido.fragmentdemo.FragmentC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fragment C" />
+
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/fragCnumber1"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/fragCnumber2"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Data to parent activity"
+        android:id="@+id/btnFragCSendDataToParentActivity"
+        />
+
+
+</LinearLayout>

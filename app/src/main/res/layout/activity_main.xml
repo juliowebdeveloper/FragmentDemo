@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.shido.fragmentdemo.MainActivity">
+
+
+    <!--
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add A"
+            android:id="@+id/btnAddFragA"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove B"
+            android:id="@+id/btnremoveFragA"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add  B"
+            android:id="@+id/btnAddFragB"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove B"
+            android:id="@+id/btnRemoveFragB"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace A"
+            android:id="@+id/btnReplaceA"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace B"
+            android:id="@+id/btnReplaceB"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach A"
+            android:id="@+id/btnAttachA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detach A"
+            android:id="@+id/btnDetachA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach B"
+            android:id="@+id/btnAttachB"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detach B"
+            android:id="@+id/btnDetachB"/>
+
+    </LinearLayout>
+-->
+    <!-- Container para os Fragments    -->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <EditText
+           android:background="@android:color/white"
+           android:id="@+id/number1"
+           android:layout_weight="1"
+           android:layout_margin="5dp"
+           android:inputType="number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:background="@android:color/white"
+           android:id="@+id/number2"
+           android:layout_weight="1"
+           android:layout_margin="5dp"
+           android:inputType="number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+
+   </LinearLayout>
+
+    <Button
+
+        android:id="@+id/btnSendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Sum to Fragment" />
+
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/container"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
